@@ -15,3 +15,4 @@ function mostrar()
 	document.getElementById("txtIdNombre").value = mensajeDeRespuesta;
 }
 
+

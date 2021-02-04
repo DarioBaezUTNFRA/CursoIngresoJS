@@ -1,5 +1,4 @@
-/*
-Dario Baez
+/* Dario Baez
 
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
