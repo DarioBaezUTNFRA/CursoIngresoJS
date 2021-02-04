@@ -1,31 +1,33 @@
 /*
+Dario Baez
+
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
+/* ejercicio 6 */
+
 function sumar()
 {
-	//txtIdNumeroUno txtIdNumeroDos
-
+	//declaracion de variables
 	var numeroUno;
 	var numeroDos;
 	var resultado;
 	var mensaje;
-	//ingreso
-	numeroUno=document.getElementById('txtIdNumeroUno').value;
-	numeroDos=document.getElementById('txtIdNumeroDos').value;
 
-	numeroDos=parseInt(numeroDos);
+	//tomar Los numeros por ID
+	numeroUno = document.getElementById('txtIdNumeroUno').value;
+	numeroDos = document.getElementById('txtIdNumeroDos').value;
+	
+	//transformarlos a enteros (parseInt)
+	numeroDos = parseInt(numeroDos);
 	numeroUno = parseInt(numeroUno);
-	//fin ingreso
-	//inicio operar
-	resultado=numeroDos+numeroUno;
-	mensaje="la suma es : "+resultado;
-
-	//mostrar
-	//alert("la suma es : "+(parseInt(document.getElementById('txtIdNumeroUno').value)+parseInt(document.getElementById('txtIdNumeroDos').value)));
+	
+	//Sumarlos
+	resultado = numeroDos + numeroUno;
+	
+    //mostrar el resulto por medio de "ALERT
+	mensaje = "La Suma es : " + resultado;
 	alert(mensaje);
-
 }
-
 
 
