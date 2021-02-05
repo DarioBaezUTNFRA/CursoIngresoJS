@@ -14,5 +14,3 @@ function mostrar()
 	mensajeDeRespuesta = "Su nombre es: " + nombreIngresado;
 	document.getElementById("txtIdNombre").value = mensajeDeRespuesta;
 }
-
-
