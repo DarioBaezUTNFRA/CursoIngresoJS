@@ -102,5 +102,4 @@ function dividir()
 
 	//mostrar
 	alert(mensaje);
-	
 }
