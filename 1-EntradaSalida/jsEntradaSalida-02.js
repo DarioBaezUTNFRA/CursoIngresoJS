@@ -17,5 +17,3 @@ function mostrar()
 	mensaje = "El nombre ingresado es: " + nombreIngresado;
 	alert(mensaje);
 }
-
-
