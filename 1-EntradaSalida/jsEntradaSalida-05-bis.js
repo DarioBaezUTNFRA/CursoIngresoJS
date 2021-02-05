@@ -8,7 +8,6 @@ bis :
 
  "Perez , usted se llama jose y tiene 66 años"
 se debe optener el apellido , de la manera que puedan */
-
 /* ejercicio 5 bis */
 function mostrar()
 {	
