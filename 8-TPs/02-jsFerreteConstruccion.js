@@ -73,7 +73,7 @@ function Materiales ()
 	 //declaracion de variables
      var largo;
      var ancho;
-     var resultado;
+     var area;
      var bolsaDeCementoPorM2;
      var bolsaDeCalPorM2;
      var totalBolsasDeCemento;
@@ -88,16 +88,16 @@ function Materiales ()
      largo = parseInt(largo);
      ancho = parseInt(ancho);
  
-     //calcular perimetro
-     perimetro = (2 * largo) + (2 * ancho);
+     //calcular del area
+     area = largo * ancho;
      
      //calcular cemento
      bolsaDeCementoPorM2  = 2;
-     totalBolsasDeCemento = perimetro * bolsaDeCementoPorM2;
+     totalBolsasDeCemento = area * bolsaDeCementoPorM2;
 
      //calcular cal
      bolsaDeCalPorM2  = 3;
-     totalBolsasDeCal = perimetro * bolsaDeCalPorM2;
+     totalBolsasDeCal = area * bolsaDeCalPorM2;
 
      //mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 
