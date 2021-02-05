@@ -29,3 +29,4 @@ function mostrarAumento()
 	document.getElementById("txtIdResultado").value = resultado;
 
 }
+
