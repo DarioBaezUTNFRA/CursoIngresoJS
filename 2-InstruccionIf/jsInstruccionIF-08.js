@@ -26,11 +26,5 @@ function mostrar()
 			alert("Es soltero y no es menor");
 	   }	   
 	}
-	else // caso contrario es distinto a Soltero
-	{
-       if (edad < 18) //si es distinto a Soltero  y es menor
-	   {
-			console.log("NO HACER NADA");
-	   }
-	}
+
 }//FIN DE LA FUNCIÓN
