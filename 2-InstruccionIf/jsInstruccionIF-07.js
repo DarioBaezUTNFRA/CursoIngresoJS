@@ -18,7 +18,7 @@ function mostrar()
 	edad = parseInt(edad);
    
 	
-	if( edad > 18 || edad == 18) // Si ingresa una edad mayor o igual a 18 años 
+	if( edad > 17) // Si ingresa una edad mayor a 17 incluye el 18 y mayores de 18 años
 	{
        console.log("Edad : " + edad + " Estado Civil : " + estadoCivil );
 	}
