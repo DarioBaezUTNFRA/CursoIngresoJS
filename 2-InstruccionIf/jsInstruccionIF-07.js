@@ -20,13 +20,13 @@ function mostrar()
 	
 	if( edad > 18 || edad == 18) // Si ingresa una edad mayor o igual a 18 años 
 	{
-       alert("Su Edad es: " + edad + " años y su Estado Civil es: " + estadoCivil );
+       console.log("Edad : " + edad + " Estado Civil : " + estadoCivil );
 	}
 	else // caso contrario la edad es menor a 18 años
 	{  
       if(estadoCivil == 'Soltero')//si estado civil es Soltero
 	  {
-		alert("Su Edad es: " + edad + " años y su Estado Civil es: " + estadoCivil );
+		console.log("Edad : " + edad + " Estado Civil : " + estadoCivil );
 	  }  
 	  else // caso contrario estado civil distinto a "Soltero"
 	  {
