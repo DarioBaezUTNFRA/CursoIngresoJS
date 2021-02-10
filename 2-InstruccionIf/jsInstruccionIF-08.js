@@ -21,10 +21,11 @@ function mostrar()
 	if(estadoCivil == 'Soltero')//si estado civil es Soltero
 	{    
 		if (edad > 17) //si es mayor
-	   {
+	    {
 			//si es soltero y no es menor mostrar 'Es soltero y no es menor.'
 			alert("Es soltero y no es menor");
-	   }	   
+	    }	   
 	}
+	//Si la condición no se cumple NO HACER NADA
 
 }//FIN DE LA FUNCIÓN
