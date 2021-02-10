@@ -19,7 +19,8 @@ function mostrar()
 
 	if( (edad < 18) &&  ( ! (estadoCivil =='Soltero')) ) //si es menor y distinto a Soltero
 	{  
-		//no hacer nada
+		//NO HACER NADA
+		console.log("NO HACER NADA");
 	}
 	else 
 	{
@@ -36,7 +37,7 @@ function mostrar()
 	   {    
 		   // es menor    y es soltero
 		   // no es menor y no es soltero
-		   alert("El Estado Civil es : " + estadoCivil +  " y la Edad es : " + edad);
+		   console.log("Edad : " + edad + " Estado Civil : " + estadoCivil );
 	   }
 	}
 
