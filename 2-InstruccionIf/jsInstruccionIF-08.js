@@ -17,10 +17,65 @@ function mostrar()
 	//paseInt
 	edad = parseInt(edad);
 
-	if( (edad < 18) &&  ( ! (estadoCivil =='Soltero')) ) //si es menor y distinto a Soltero
+
+    if( edad < 18) // si es menor
+	{
+	  if(estadoCivil == 'Soltero')//si estado civil es Soltero
+	  { 
+		
+	  }
+	  else //si es menor y distinto a "Soltero"
+	  {
+		  console.log("NO HACER NADA");
+
+	  }
+	  
+	}
+	else // caso contrario es menor
 	{  
-		//NO HACER NADA
-		console.log("NO HACER NADA");
+		if(estadoCivil == 'Soltero')//si estado civil es Soltero
+		{ 
+		  //si es soltero y no es menor mostrar 'Es soltero y no es menor.'
+		   console.log("Es soltero y es menor");
+		}
+		
+	 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	if(edad < 18)  //si es menor a 18 años
+	{    
+		if( estadoCivil =='Soltero')
+		{
+         
+		}
+		else
+		{
+			console.log("NO HACER NADA");
+		}
+		
 	}
 	else 
 	{
