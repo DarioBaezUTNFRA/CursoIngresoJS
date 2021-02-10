@@ -12,7 +12,7 @@ function mostrar()
 	var nota;
     
 	//asignar una nota RANDOM al examen entre 1 y 10 inclusive
-    nota = Math.floor(Math.random() * (10 - 1 + 1) ) + 1;
+    nota = Math.floor(Math.random() * 10 ) + 1;
 
     console.log("nota: " + nota);
 
