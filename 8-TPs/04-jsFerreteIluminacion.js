@@ -9,7 +9,7 @@ D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  el descuento es de
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de ingresos brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó.  */
 
- /* TP 04  FerreteIluminacion*/
+ /* TP 04  FerreteIluminacion solo SWITCH (la parte des descuento)*/
  function CalcularPrecio () 
  {
      //declaracion de variables
@@ -39,83 +39,67 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
      //Calcular el precioBruto
      precioBruto = precioUnitario * cantidadDeLamparas;
  
-     if(cantidadDeLamparas > 5)
-     {   
-         //tiene un descuento del 50%.
-         porcentajeDescuento = 50;
-     }
-     else
-     {   
-         if(cantidadDeLamparas == 5)
-         {
-            if( marca=="ArgentinaLuz")
-            {
-                //tiene un descuento del 40%.
-                porcentajeDescuento = 40;
-            }
-            else
-            {
-                //tiene un descuento del 30%.
-                 porcentajeDescuento = 30;
-            }
-         }//fin cantidadDeLamparas == 5
-         else
-         {
-            if(cantidadDeLamparas == 4)
-            {
-                if(marca=="ArgentinaLuz")
-                {
-                    //tiene un descuento del 25%.
-                    porcentajeDescuento = 25;
-                }
-                else
-                {
-                    if(marca=="FelipeLamparas")
-                    {
-                        //tiene un descuento del 25%.
-                        porcentajeDescuento = 25;
-                    }
-                    else
-                    {
-                         //tiene un descuento del 20%.
-                         porcentajeDescuento = 20;
-                    }
-                }
-            }//fin cantidadDeLamparas == 4
-            else
-            {
-                if(cantidadDeLamparas == 3)
-                {
-                    if(marca=="ArgentinaLuz")
-                    {
+    
+       switch(cantidadDeLamparas)
+       {   
+           case 1:
+           case 2:
+                porcentajeDescuento = 0;
+                break;
+           case 3:
+                switch(marca)
+                { 
+                    case "ArgentinaLuz":
                         //tiene un descuento del 15%.
                         porcentajeDescuento = 15;
-                    }
-                    else
-                    {
-                        if(marca=="FelipeLamparas")
-                        {
-                             //tiene un descuento del 10%.
-                            porcentajeDescuento = 10;
-                        }
-                        else
-                        {
-                             //tiene un descuento del 5%.
-                             porcentajeDescuento = 5;
-                        }
+                        break;
 
-                    }
+                    case "FelipeLamparas":
+                         //tiene un descuento del 10%.
+                         porcentajeDescuento = 10;
+                        break;
 
-                }//fin cantidadDeLamparas == 3
-                else
-                {
-                    porcentajeDescuento = 0;
-                }
-            }
+                    default:
+                        //tiene un descuento del 5%.
+                        porcentajeDescuento = 5;
+                        break;
+                } 
+                break;
+            case 4:
+                switch(marca)
+                { 
+                    case "ArgentinaLuz":
+                    case "FelipeLamparas":
+                         //tiene un descuento del 25%.
+                         porcentajeDescuento = 25;
+                        break;
 
-         }
-     }
+                    default:
+                        //tiene un descuento del 20%.
+                        porcentajeDescuento = 20;
+                        break;
+                } 
+                break;
+            case 5:
+                switch(marca)
+                { 
+                    case "ArgentinaLuz":
+                        //tiene un descuento del 40%.
+                        porcentajeDescuento = 40;
+                        break;
 
+                    default:
+                        //tiene un descuento del 30%.
+                        porcentajeDescuento = 30;
+                        break;
+                } 
+                break;
+
+            default:
+                 //tiene un descuento del 50%.
+                porcentajeDescuento = 50;
+                break;
+       }
 
       //calcular descuento del x %
       descuento = (precioBruto * porcentajeDescuento) / 100;
@@ -127,7 +111,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
            ingresosBrutos = (precioBruto * porcentajeIngresosBrutos) / 100;
            
            //en informar del impuesto con el siguiente mensaje: ”IIBB Usted pago X”
-           alert("IIBB Usted pago: " + ingresosBrutos);
+           alert("IIBB Usted pago: $" + ingresosBrutos);
       }
       else
       {
@@ -142,3 +126,4 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
   
      
  }
+
