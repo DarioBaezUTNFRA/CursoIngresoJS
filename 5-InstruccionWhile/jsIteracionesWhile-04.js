@@ -19,6 +19,5 @@ function mostrar()
 		numeroIngresado = prompt("ingrese un número entre 0 y 9 inclusive.");
 	}
 
-	document.getElementById('txtIdNumero').value = numeroIngresado;
-	
+
 }//FIN DE LA FUNCIÓN
