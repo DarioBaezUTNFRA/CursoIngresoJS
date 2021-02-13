@@ -3,6 +3,7 @@
 /*al presionar el botón mostrar 10 repeticiones con números ASCENDENTE, desde el 1 al 10.*/
 
 /*EJ IteracionesWhile-01 */
+
 function mostrar()
 {   
 	//Inicializacion contador
@@ -13,5 +14,5 @@ function mostrar()
 		alert( "Número :" + contador);
 		contador= contador + 1;
 	}
-	
+
 }//FIN DE LA FUNCIÓN
