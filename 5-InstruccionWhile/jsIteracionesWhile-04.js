@@ -9,15 +9,16 @@ function mostrar()
 	var numeroIngresado;  
 
 	//ingreso de datos
-	numeroIngresado = prompt("ingrese un número entre 0 y 9 inclusive.");
+	numeroIngresado = prompt("Ingrese un número entre 0 y 9 inclusive.");
 
 	//parseInt
 	numeroIngresado = parseInt(numeroIngresado);
 
-	while(numeroIngresado < 0 || numeroIngresado > 9)
+	while(isNaN(numeroIngresado) == true || numeroIngresado < 0 || numeroIngresado > 9)
 	{
-		numeroIngresado = prompt("ingrese un número entre 0 y 9 inclusive.");
+		numeroIngresado = prompt("Ingrese un número entre 0 y 9 inclusive.");
 	}
 
+    document.getElementById('txtIdNumero').value = numeroIngresado ;
 
 }//FIN DE LA FUNCIÓN
