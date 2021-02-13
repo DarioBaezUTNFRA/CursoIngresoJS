@@ -1,11 +1,27 @@
 /* Dario Baez */
 /*Al presionar el botón pedir un sexo 'f' para femenino, 'm' para masculino.*/
+
+/*EJ While 05*/
 function mostrar()
-{
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+{   
+	//declaracion de variables
+	var sexoIngresado; 
 
+	//ingreso de datos
+	sexoIngresado = prompt("Ingrese 'f' o 'm'.");
 
-
-	txtIdSexo.value=sexoIngresado;
+	while( sexoIngresado != "f" && sexoIngresado != "m" )
+	{
+		sexoIngresado = prompt("Ingrese 'f' o 'm'.");
+	}
+    
+	if (sexoIngresado == "f")
+	{
+		document.getElementById('txtIdSexo').value = "Femenino";
+	}
+	else
+	{
+		document.getElementById('txtIdSexo').value = "Masculino";
+	}
+	
 }//FIN DE LA FUNCIÓN
