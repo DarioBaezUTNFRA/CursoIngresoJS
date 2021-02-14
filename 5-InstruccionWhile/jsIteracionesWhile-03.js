@@ -13,7 +13,8 @@ function mostrar()
 	
 	claveCorrecta = "utn750"
 	claveIngresada = prompt("Ingrese el número clave.");
-
+    
+	//La logica para validar en while siempre es la inversa al del enunciado
 	while(claveIngresada != claveCorrecta)
 	{
 		claveIngresada = prompt("La clave ingresada es inválida. Ingrese el número clave.");

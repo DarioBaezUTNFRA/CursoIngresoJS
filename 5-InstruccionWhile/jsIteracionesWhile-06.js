@@ -14,29 +14,30 @@ function mostrar()
 	var promedio;
     
 	//inicializacion
-	contador   = 0;
+	contador   = 0;  // 1° parte inicializo
 	acumulador = 0;
    
 	//pedir 5 números
-	while(contador < 5)
+	while(contador < 5) //2° parte la logica de la condicion del while
 	{   
 		//ingresa la 1° vez y arranca el contador
 		contador        = contador + 1;  
 		
-		//Ingreso de datos
+		//Ingreso de datos mostrando el numero  que debe ingresar
 	    numeroIngresado = prompt("Ingrese numero : #" + contador);
-
-		//si la función isNaN() es true, entonces el valor ingresado no es un numero
-        while (isNaN(numeroIngresado) == true) 
-		{
-			//Ingreso de datos 
-			numeroIngresado = prompt("Error, Ingrese numero : #" + contador);
-		}
-
 		//parseInt
 		numeroIngresado = parseInt(numeroIngresado);
 
-		//calcula la suma acumulada
+		//VALIDACION si la función isNaN() es true, entonces el valor ingresado no es un numero
+        while (isNaN(numeroIngresado) == true) 
+		{
+			//Ingreso de datos mostrando el numero  que debe ingresar
+			numeroIngresado = prompt("Error, Ingrese numero : #" + contador);
+			//parseInt
+			numeroIngresado = parseInt(numeroIngresado);
+		}
+
+		// 3° parte, modifico la variable calcula la suma acumulada
         acumulador = acumulador + numeroIngresado;
 	}
 
